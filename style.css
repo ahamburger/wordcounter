@@ -1,0 +1,118 @@
+body {
+	font-family: sans-serif;
+}
+
+
+h1{
+	margin:20px 10px 10px;
+}
+
+
+
+.count{
+	margin-top:5px;
+	display: inline-block;
+	font-size: 30px;
+	font-weight:bold;
+	line-height: 30px;
+	width:50px;
+	
+	text-align: right;
+
+}
+
+
+.graph {
+	margin-top:5px;
+
+	display: inline-block;
+	position:absolute;
+	margin-left:10px;
+	width: 400px;
+	height:30px;
+	border-right:4px solid #00CC99;
+
+/*	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;*/
+
+}
+
+.graph div {	
+	height:30px;
+
+
+/*	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;*/
+}
+
+.container  {
+	width:800px;
+	display: inline-block;
+}
+
+
+
+.instructions{
+	margin-left:10px;
+	float:left;
+	margin-top:20px;
+	width:800px;
+}
+
+.total{
+	font-size:50px;
+	font-weight: bold;
+	color:black;
+
+	display: inline-block;
+	text-align: center;
+
+	background-color: #6699FF;
+/*
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;*/
+	
+	padding: 0 10px;
+	margin: 40px 20px;
+}
+.mostUsed{
+	display:inline-block;
+	padding:5px;
+/*	width: 800px;*/
+	line-height: 30px;
+}
+.topWord{
+	font-weight: normal;
+	font-size: 16px;
+	color:black;
+	line-height: 32px;
+	padding-left: 10px;
+	position:absolute;
+
+}
+
+.topNums{
+	font-weight: bold;
+	font-size: 30px;
+	text-align: right;
+	padding-left:15px;
+	color: #6699FF;
+
+}
+
+form{
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.smallTB{
+	display:inline;
+}
+
+#textBox{
+	margin:10px;
+	display: block;
+}
