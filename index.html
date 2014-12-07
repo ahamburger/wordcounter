@@ -1,1 +1,58 @@
-Hello
+ <!DOCTYPE html>
+ <html>
+ <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+     
+     <h1>Word Counter</h1>
+
+     <div class="instructions">Enter text below. Please respond in 
+     	<div class="smallTB"><textarea id="maxText" cols="5" rows="1">50</textarea></div>
+     words or fewer.
+
+	 <textarea id="textBox" cols="60" rows="5"></textarea></div>
+
+
+ 		 <div class="container">
+		 	<div class="count"></div>
+		 	<div class="graph"></div>
+		 	 
+		 </div>
+		
+ 
+
+ <div class="container">
+	<div class="instructions" style="width:200px; margin-left:20px;">How many times have I used the word:
+     	<div class="smallTB"><textarea id="wordSearch" cols="5" rows="1"></textarea></div>?
+     <form>
+		<input type="radio" name="opt" value="contains">Contains Word 
+		<br>
+		<input type="radio" name="opt" value="matches" checked>Matches Word
+	</form></div>
+     <div class="total"></div>
+<div class="container">
+<!-- 	<div class="instructions">Top 
+<select id="dropdown">
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+</select> most used words:</div> -->
+<div class="instructions">Most used words:</div>
+     <div class="mostUsed"></div>
+	<!-- 
+	<script src="wordcount.js"> </script>
+ -->
+ </div>
+</div>
+ 	<script src="wordcount.js"></script>
+
+ </div>
+ </body>
+ </html>
