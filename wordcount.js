@@ -97,6 +97,7 @@ function updateMaxWords(){
 function update(){
 	setInterval(function() {
 	text = document.getElementById("textBox").value.trim().toLowerCase();
+	text = text.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g,"");	//remove punc.
 	  var changedMax = updateMaxWords();
 	  var changedWC = countWords();
 	  
@@ -154,7 +155,6 @@ function update1WC(){
 function countWords1WC(){
 	var searchOpt = document.getElementsByName('opt');
     var contains = searchOpt[0].checked;
-    var text = document.getElementById("textBox").value.trim();
 
     if (contains){
 		matches = text.split(word);
