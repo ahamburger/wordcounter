@@ -32,6 +32,8 @@ function init(){
 	max_words = document.getElementById("maxText").value;		
 	update();
 
+  	text = document.getElementById("textBox").value.trim().toLowerCase();
+  	word = document.getElementById("wordSearch").value.trim().toLowerCase();
 	init1WC();
 	initMostUsed();
 }
@@ -62,7 +64,6 @@ function updateText() {
 
 function countWords() {
 	var old_count = word_count[0];
-	var text = document.getElementById("textBox").value.trim()
 	word_count[0] = text === "" ? 0 : text.split(" ").length;
 	
 	var border_color = green_color;
@@ -95,7 +96,7 @@ function updateMaxWords(){
 
 function update(){
 	setInterval(function() {
-	text = document.getElementById("textBox").value.trim();
+	text = document.getElementById("textBox").value.trim().toLowerCase();
 	  var changedMax = updateMaxWords();
 	  var changedWC = countWords();
 	  
@@ -113,7 +114,8 @@ function update(){
 
 
 	//1WC
-  	word = document.getElementById("wordSearch").value.trim();
+  	word = document.getElementById("wordSearch").value.trim().toLowerCase();
+
 	countWords1WC();
 	update1WC();
 
@@ -129,8 +131,6 @@ function init1WC(){
 			.text(count)
 
 	
-	word = document.getElementById("wordSearch").value.trim();
-	text = document.getElementById("textBox").value.trim();
 
 	if (word === "" || text === ""){
 		count[0] = 0;
