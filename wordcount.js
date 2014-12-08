@@ -160,6 +160,8 @@ function countWords1WC(){
 		matches = text.split(word);
 		 if (matches !== null)
 		 	count[0] = matches.length-1;
+		 else
+		 	count[0] = 0;
 	}
 	else{
 		count[0] = words[word];
